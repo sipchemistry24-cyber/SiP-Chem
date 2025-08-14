@@ -455,3 +455,23 @@ tr:hover {
   color: #059669;
   background: #ecfdf5 !important;
 }
+
+.myrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.mycolumn {
+  width: 400px;
+  text-align: center;
+}
+
+.mycolumn img {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+}

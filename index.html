@@ -141,7 +141,94 @@ We benchmark SiP across 10 diverse datasets and 6 pre-trained LLMs, covering cla
   </div>
 </section>
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">SiP -- Characteristics and Statistics</h2>
+        <!-- <h2 class="title is-3">SiP Framework -- Unique Features of Structure-informed Prompting?</h2> -->
+        <h2 class="content has-text-justified">
+          <div class="characteristics">
+            <h2>Characteristics of SiP</h2>
+            <ol>
+                <li><strong>Structure-Informed Prompting:</strong> SiP enhances LLMs by integrating rich molecular structure and property information directly into prompts without requiring training.</li>
+                <li><strong>Multi-Component Integration:</strong> Combines fundamental molecular properties (formula, weight, rings), electronic/structural composition (InChI, SMILES, electronic configurations), and 3D spatial information (atomic coordinates).</li>
+                <li><strong>Model-Agnostic Approach:</strong> Works with any pre-trained LLM without modification, making it portable and scalable across different architectures.</li>
+                <li><strong>Enhanced SiP+ Framework:</strong> Introduces graph-guided contrastive learning for improved structural understanding while maintaining inference efficiency.</li>
+            </ol>
+        </div>
+    
+        <div class="statistics">
+            <h2>Statistics of SiP</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Number of Datasets</td>
+                        <td>10 datasets covering BACE, BBBP, HIV, ClinTox, Tox21, ESOL, LD50, QM9, PCQM4Mv2, Chebi-20</td>
+                    </tr>
+                    <tr>
+                        <td>Task Coverage</td>
+                        <td>Classification (5 datasets), Regression (4 datasets), Molecular Description (1 dataset)</td>
+                    </tr>
+                    <tr>
+                        <td>Model Evaluation</td>
+                        <td>6 foundation models: GPT-4o, GPT-3.5, DeepseekR1, Mistral 7B, Llama 3.1 8B, Phi4</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluation Scenarios</td>
+                        <td>Zero-shot, few-shot (k=2), fine-tuning with LoRA, and cross-dataset generalization</td>
+                    </tr>
+                    <tr>
+                        <td>Performance Improvements</td>
+                        <td>DeepseekR1 achieves 0.93 accuracy (classification), 0.69 MAE (regression), 70.07 score (description)</td>
+                    </tr>
+                    <tr>
+                        <td>Key Innovation</td>
+                        <td>Training-free approach embedding molecular formula, electronic structure, ring information, and 3D coordinates</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </h2>
+       
+<div class="myrow">
+  <div class="mycolumn">
+    <img src="static/images/classification-sip.png" alt="Classification Performance" />
+  </div>
+  <div class="mycolumn">
+    <img src="static/images/regression-sip.png" alt="Regression Performance" />
+  </div>
+  <div class="mycolumn">
+    <img src="static/images/llama_tasks_sip_plus.png" alt="SiP+ Enhancement" />
+  </div>
+</div>
 
+        <h2 class="content has-text-justified">
+        
+          <ul>
+            <li><b>SiP Framework Overview:</b> Performance comparison of SiP with baseline prompting across classification (Left ↑), regression (Center ↓), and molecular description tasks. All models show enhanced performance using SiP approach with in-context learning (k=2). (Right:) SiP+ provides consistent improvements over base SiP across all tasks through graph-guided contrastive learning (↑).</li>
+          </ul>
+          </h2>
+
+        <div class="key-results">
+            <h2>Key Results</h2>
+            <ul>
+                <li><strong>Consistent Improvements:</strong> SiP significantly outperforms baseline prompting across all models and tasks</li>
+                <li><strong>Enhanced Performance:</strong> SiP+ further improves results through graph-guided contrastive learning</li>
+                <li><strong>Cross-dataset Generalization:</strong> Demonstrates robust transferability across different molecular datasets</li>
+                <li><strong>Training-free Efficiency:</strong> Achieves superior results without requiring model fine-tuning or architectural changes</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- End image carousel -->
 
